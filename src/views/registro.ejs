@@ -1,0 +1,28 @@
+<%- layout("layouts/main")%>
+ <% if (signupMessage && signupMessage.length > 0) { %>
+    <div class="alert alert-danger"><%= signupMessage[0] %></div>
+<% } %> 
+
+<div class="row">
+    <div class="col-md-4 offset-md-4">
+        <div class="card mt-4 text-center card-card">
+            
+            <div class="card-body">
+<form action="/registro" method="POST">
+    <div class="form-group">
+        <input type="email" name="email" class="form-control" placeholder="Correo electrónico" required>
+    </div>
+    <div  class="form-group">
+        <input type="password" name="password" class="form-control" placeholder="Contraseña" required>
+    </div>
+    
+    <button class="btn btn-primary btn-block mt-4" value="">Registrarse</button>
+   
+    <a class="btn btn-secondary btn-block mt-4 btn-a" href="/auth/google" role="button">
+        <img src="https://img.icons8.com/?size=512&id=17949&format=png" alt="" width="30px" height="30px">
+        Sign Up with Google
+    </a>
+   
+    
+</form>
+            </div>

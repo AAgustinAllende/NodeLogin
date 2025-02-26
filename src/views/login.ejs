@@ -1,0 +1,28 @@
+<%- layout("layouts/main")%>
+
+
+<div class="row">
+<div class="col-md-4 offset-md-4">
+    <div class="card mt-4 text-center">
+        <div class="card-header">
+            <h3>Ingresar</h3>
+        </div>
+        <div class="card-body">
+            <form action="/login" method="POST">
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Correo electrónico" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password" placeholder="Contraseña" class="form-control">
+                </div>
+                
+                <button class="btn btn-primary btn-block mt-4">Iniciar sesión</button>
+                <a class="btn btn-secondary btn-block mt-4 btn-a" href="/auth/google" role="button">
+                    <img src="https://img.icons8.com/?size=512&id=17949&format=png" alt="" width="30px" height="30px">
+                    Sign Up with Google
+                </a>
+                </form>
+        </div>
+    </div>
+</div>
+</div>

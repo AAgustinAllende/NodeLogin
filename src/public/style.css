@@ -1,0 +1,11 @@
+.btn-a:hover {
+    background-color: lightblue; /* Cambia el color en hover */
+}
+
+body{
+    background-image: url("https://images.pexels.com/photos/373883/pexels-photo-373883.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
